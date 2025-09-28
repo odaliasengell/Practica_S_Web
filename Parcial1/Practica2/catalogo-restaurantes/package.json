@@ -1,0 +1,28 @@
+{
+  "name": "catalogo-restaurantes",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/presentation/server.ts",
+    "start": "tsx src/presentation/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.5",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.6.3"
+  },
+  "description": "- **Título:** Catálogo de Restaurantes de Manta - Arquitectura del Dominio con Métodos Asíncronos   - **Asignatura:** Aplicaciones para el Servidor Web   - **Nivel:** Quinto   - **Período Lectivo:** 2025-2026(2)   - **Docente:** John Cevallos",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
