@@ -1,0 +1,23 @@
+{
+  "name": "taller-typeorm",
+  "version": "1.0.0",
+  "description": "Taller TypeORM puro - entidades Guia, Tour, Reserva",
+  "main": "src/main.ts",
+  "scripts": {
+    "seed": "ts-node src/main.ts",
+    "build": "tsc -p .",
+    "start": "node dist/src/main.js"
+  },
+  "author": "Integrante 2",
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.6",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}

@@ -5,8 +5,8 @@ import { Rating } from '../value-objects/Rating.js';
 
 /**
  * Entidad del Dominio: Restaurant
- * Representa un restaurante en el sistema con toda su lógica de negocio
  */
+
 export class Restaurant {
   private readonly _id: string;
   private _name: string;

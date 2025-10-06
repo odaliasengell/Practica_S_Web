@@ -1,0 +1,34 @@
+@startuml
+entity "Guia" as Guia {
+  * id : INT <<PK>>
+  --
+  nombre : VARCHAR
+  telefono : VARCHAR
+  email : VARCHAR
+  activo : BOOLEAN
+}
+
+entity "Tour" as Tour {
+  * id : INT <<PK>>
+  --
+  titulo : VARCHAR
+  descripcion : TEXT
+  precio : DECIMAL
+  fecha : DATETIME
+  guia_id : INT <<FK>>
+}
+
+entity "Reserva" as Reserva {
+  * id : INT <<PK>>
+  --
+  cliente_nombre : VARCHAR
+  cliente_email : VARCHAR
+  cantidad_personas : INT
+  fecha_reserva : DATETIME
+  tour_id : INT <<FK>>
+}
+
+Guia ||--o{ Tour : guia_de
+Tour ||--o{ Reserva : tiene
+
+@enduml
